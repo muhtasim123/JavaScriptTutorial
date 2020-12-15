@@ -20,6 +20,7 @@ console.log(`calling function with 2 params: ${mathFunc2(10,2)}`);
 console.log(`calling function with 3 params: ${mathFunc2(10,2,4)}`);
 console.log(`calling function with 4 params: ${mathFunc2(10,2,4,5)}\n\n`);
 
+//stores rest of params into an array called params
 let avg = (a,b, ...params) => {
     let total = a+b;
     for (let i = 0; i < params.length; i++){
